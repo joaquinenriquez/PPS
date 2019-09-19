@@ -1,0 +1,4 @@
+ionic start login blank --type=angular
+
+ionic g guard guards/auth --spec=false
+ionic g page admin --spec=false

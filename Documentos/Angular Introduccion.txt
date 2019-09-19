@@ -1,0 +1,4 @@
+* Mantenido por Google
+* Nos permite crear aplicaciones de una sola pagina del lado cliente
+* AngularJS fue la primera versión y
+* Utiliza HTML, CSS/SASSS y TypeScript

@@ -1,0 +1,26 @@
+Promesas y observables
+
+* Ambas nos permiten trabajar con procesos asincronos
+
+* No necesariamente se utilizan solo para peticiones HTTP o consumir API: nos sirven para cualquier trabajo que queramos ejecutar y esperar una respuesta que no viene de forma instantanea. 
+
+* Por ejemplo se pueden utilizar para ser notificados de ciertos cambios que se produzcan, por ejemplo transcurre determinado tiempo, se cambia un contador, etc.
+
+
+Promesas:
+
+* Trabajan con un unico flujo de datos
+
+* Se usan con una unica data asicrona de respuesta
+
+* No es muy simple cancelar
+
+
+Observable
+
+* Trabajan con un flujo continiuo de datos
+
+* Al fallar se puede ejecutar comandos y reintentar con el observer
+
+* Se pueden encadenar operadores adicionales como 
+

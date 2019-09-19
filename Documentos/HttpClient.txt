@@ -1,0 +1,20 @@
+1. Importamos HttpClientModule en appModule.ts 
+
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [... HttpClientModule]
+
+2. En donde lo queremos usarlo (componente, servicio, page, etc) importamos el objeto el HttpClient
+
+import { HttpClient } from '@angular/common/http';
+
+3. En el mismo lugar donde hicimos la importacion del paso anterior inyectamos en el constructor una instancia del objeto
+
+  constructor(private http: HttpClient) { }
+
+4. Ya podemos utilizarlo. El objeto del tipo HttpClient tenemos metodos correspondientes a los verbos HTTP.
+
+GET:

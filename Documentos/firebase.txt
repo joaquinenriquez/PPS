@@ -1,0 +1,20 @@
+Firebase
+
+1. Creamos proyecto en la web
+2. Copiamos la key dentro de enviroment
+3. Instalamos firebase y @angular/fire
+npm i firebase @angular/fire --save
+4. Importamos en app.module
+
+// Firebase
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from './../environments/environment';
+
+Agregamos en los imports:
+    AngularFireModule.initializeApp(environment.firebaseConfig), 
+    AngularFireAuthModule],
+
+
+5. Creamos un servicio e importamos:
+import { AngularFireAuth } from '@angular/fire/auth';

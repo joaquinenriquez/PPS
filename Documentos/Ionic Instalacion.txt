@@ -1,0 +1,15 @@
+Requisitos:
+* Node
+* NPM
+(ultimas versiones)
+
+Deseables
+* Git
+* VSC
+
+
+Instalacion:
+
+npm install -g ionic
+
+(como administrador)

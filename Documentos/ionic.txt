@@ -1,0 +1,43 @@
+requerimientos 
+nodejs + npm
+	node --version
+	npm --version
+
+instalacion
+npm install -g ionic
+(da igual la carpeta donde estemos porque lo instalamos de forma global)
+Vamos a tener que hacerlo como administrador
+
+ionic start nombreApp Nombretemplate
+	Tablates:
+		blank
+		tabs:
+		menu
+
+A partir de la version 4 se pueden usar otros frameworks ademas de Angular:
+Vue.js o React o directamente sin Framework
+
+Cuando generamos una app en Ionic podemos compilar el mismo codigo para iOS, android y para la web o podemos convertirla a una PWA (Progressive Web Application)
+
+Iniciar servidor:
+ionic serve
+puerto por defecto: 8100
+
+
+Por defecto nos crea un router de angular
+
+Componente
+ionic g c nombreComponente
+
+Servicio
+inioc g s nombreServicio
+
+ionic g page nombrePagina
+
+No crear archivo de testing:
+--spec=false
+
+Ionic AppFlow:
+Nos permite desde una cuenta gestionar el codigo de nuestra app
+Deployar
+
