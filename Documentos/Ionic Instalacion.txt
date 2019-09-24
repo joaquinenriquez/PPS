@@ -1,6 +1,13 @@
 Requisitos:
 * Node
 * NPM
+* JAVA JRE
+* Android Studio
+* Cordova
+* Cordova-res
+* Native-Run
+* Gradle
+
 (ultimas versiones)
 
 Deseables
@@ -8,8 +15,54 @@ Deseables
 * VSC
 
 
-Instalacion:
+Instalar Node y NPM
+1. Descargar e instalar la ultima version de la pagina oficial
+https://nodejs.org
+2. Verificar versiones
+npm --version
+node --version
 
+Instalar JAVA JRE
+1. Descargar e instalar la ultima version de la pagina oficial
+https://java.com
+2. Agregar la variable de entorno JAVA_HOME
+setx -m JAVA_HOME "C:\Progra~1\Java\jdk1.8.0_221"
+
+
+Instalar Android Studio
+1. Instalar Android Studio desde el instalador.
+
+2. Descargar la SDK por defecto
+
+3. Configurar las variables de entorno del SDK:
+setx -m ANDROID_SDK_ROOT RutaSDK
+setx -m ANDROID_HOME RutaSDK
+
+4. Agregar a la variable path:
+C:\Progra~1\Android\Android Studio\jre\bin
+%USERPROFILE%\AppData\Local\Android\Sdk\platform-tools
+%USERPROFILE%\AppData\Local\Android\Sdk\tools
+
+4. Aceptar licencias
+%ANDROID_HOME%/tools/bin/sdkmanager --licenses
+
+Instalacion de Gradle
+1. Descargar de la pagina oficial el paquete con los bin y descomprimierlo en C:\Gradle
+2. Agregar a la variable path:
+C:\Gradle\gradle-5.6.2\bin
+
+
+Instalar Native-run
+npm install -g native-run
+
+Instalar Cordova
+npm install -g cordova
+
+Instalar Cordova-res
+npm i -g cordova-res
+
+Instalacion de Ionic:
 npm install -g ionic
 
-(como administrador)
+
+

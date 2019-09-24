@@ -1,0 +1,21 @@
+1. Ejecutamos
+ionic cordova resources
+
+Este comando nos va a crear la carpeta resources, adentro nos vamos a encontrar con algunas careptas y dos archivos PNG
+
+* icon.png
+* splash.png
+
+2. Podemos reeemplazar esos archivos por otras imagenes respetando las resoluciones:
+
+Iconos: 1024x1024
+Splash: 2732x2732
+
+3. Volvemos a ejecutar el comando:
+ionic cordova resources
+
+Nos va crear imagenes con todas la resoluciones 
+
+
+
+4. Podemos controlar el comportamiento del splash desde config.xml. En la documentacion de cordova tenemos un detalle de lo que hace cada una de las opciones
