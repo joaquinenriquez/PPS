@@ -1,0 +1,24 @@
+Existen varias formas de probar una APP:
+
+1. En un browser por medio de un webkit
+Ejecutamos el comando:
+ionic serve
+
+
+2. En un emulador de Android / Ios
+
+Andorid:
+Emuladores: 
+	* El que viene con Android Studio
+
+Ejecutamos el comando:
+ionic cordova run android --prod
+ionic cordova run android
+
+
+3. En el browser de un telefono:
+Levantamos el server en una PC:
+ionic serve
+
+Ingresamos por medio de la IP de la PC en el puerto correspondiente (por defecto es el 8100)
+IPPC:8100
