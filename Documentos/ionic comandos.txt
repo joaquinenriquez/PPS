@@ -1,4 +1,17 @@
-ionic start login blank --type=angular
+Crear un proyecto nuevo
+ionic start nombreProyecto blank --type=angular
+ionic start nombreProyecto blank --type=angular --skipTests
 
+Omitir crear archivos .spec
+--spec=false
+
+Crear pagina
+ionic generate page nombrePagina
+
+Crear servicio
+inonic generate service nombreServicio
+
+Crear Guard
 ionic g guard guards/auth --spec=false
-ionic g page admin --spec=false
+
+
