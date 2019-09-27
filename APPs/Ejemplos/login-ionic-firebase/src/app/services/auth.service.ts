@@ -8,7 +8,14 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class AuthService {
 
-  constructor(private afAuth: AngularFireAuth) { 
-    afAuth.authState.subscribe()
+/* #region  Atributos */
+  public usuarioActual: any = false;
+/* #endregion */
+
+  constructor(private afAuth: AngularFireAuth) {
+    // Si authState nos devuelve null entonces el usuario no esta logeado
+    afAuth.authState.subscribe( usuario => (this.usuarioActual = usuario));
   }
+
+
 }
