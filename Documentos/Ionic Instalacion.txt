@@ -64,5 +64,6 @@ npm i -g cordova-res
 Instalacion de Ionic:
 npm install -g ionic
 
-
+Actualizar a la ultima version de Ionic
+npm install -g ionic@latest
 

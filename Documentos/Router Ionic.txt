@@ -1,0 +1,1 @@
+A medida que vamos creando las paginas mediante el CLI de Ionic se nos van creando las rutas en el archivo app-routing.module
