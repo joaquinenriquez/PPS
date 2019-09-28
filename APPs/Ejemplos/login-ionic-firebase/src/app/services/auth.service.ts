@@ -19,10 +19,20 @@ export class AuthService {
   }
 
   async onLogin(usuario: Usuario) {
+
+    let mensajeError = '';
+
     try {
       return await this.afAuth.auth.signInWithEmailAndPassword(usuario.Email, usuario.Password);
     } catch (error) {
-      console.log('Error al intentar hacer el login', error);
+
+      switch (error.code) {
+        case 'auth/user-not-found':
+          mensajeError = 'El usuario no existe';
+          break;
+      }
+
+      console.log(mensajeError, error);
     }
   }
 
