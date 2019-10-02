@@ -1,1 +1,71 @@
-async
+----------------------------------
+Cualquier comando seguido de:
+--dry-run: nos dice que va hacer
+----------------------------------
+Comando:
+ionic g
+Sin nada, nos va a mostrar un menu con las cosas posibles
+----------------------------------
+routerLink="Ruta"
+Por ejemplo en un boton:
+<ion-button routerLink="/alert">Boton</ion-button>
+----------------------------------
+<ion-buttons >
+	<ion-back-button defaultHref="/"></ion-back-button>
+<ion-buttons>
+
+defaultHref="/" : va hacer que siempre aparezca el boton de back (sin necesidad de que haya una historia)
+slot="start" : ubica el componente al inicio del toolbar
+
+----------------------------------
+<ion-buttons >
+Nos agrupa una serie de botones
+----------------------------------
+
+Backbutton:
+
+<ion-back-button>
+Atributos
+text="texto"
+
+Mas data en ionicframework.com -> componentes backbuttons
+----------------------------------
+<ion-toolbar>
+Podemos meter iconos, botones, inputs
+----------------------------------
+Crear modulo
+ionic g module ruta\nombreComponente
+
+ejemplo:
+ionic g module app\components
+
+En el archivo del modulo components.module.ts tenemos que exportar los compoentes que vamos a utilizar desde afuera
+
+
+Luego tenemos que agregarlo en app.module.ts
+
+import { ComponentsModule } from './components/components.module';
+
+  imports: [BrowserModule,
+            IonicModule.forRoot(),
+            AppRoutingModule,
+            ComponentsModule],
+
+Si vamos a usarlo en una page, vamos a tener que incluirlo en su archivo .module.ts
+
+import { ComponentsModule } from 'src/app/components/components.module';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    RouterModule.forChild(routes),
+    ComponentsModule
+  ],
+
+----------------------------------
+* async
+* Await
+* Lazyload
+* <ion-header>
