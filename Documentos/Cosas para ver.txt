@@ -39,7 +39,20 @@ ionic g module ruta\nombreComponente
 ejemplo:
 ionic g module app\components
 
-En el archivo del modulo components.module.ts tenemos que exportar los compoentes que vamos a utilizar desde afuera
+En el archivo del modulo components.module.ts:
+	1. Tendria que aparecer el componente en el atributo declarations (la cli lo suele agregar solo). Si no es asi, lo agregamos manualemente
+	
+	2. Tenemos que exportar los compoentes que vamos a utilizar desde afuera
+
+@NgModule({
+  declarations: [
+    HeaderComponent
+  ],
+  exports: [HeaderComponent],
+  imports: [
+    CommonModule
+  ]
+})
 
 
 Luego tenemos que agregarlo en app.module.ts
@@ -63,6 +76,28 @@ import { ComponentsModule } from 'src/app/components/components.module';
     RouterModule.forChild(routes),
     ComponentsModule
   ],
+
+  
+  Si dentro de los elementos que tengamos dentro del modulo (componentes, servicios, etc) vamos a utilizar componentes de ionic, tenemos que importar el modulo de Ionic dentro del archivo .module.ts de nuestro nuevo modulo:
+  
+  import { IonicModule } from '@ionic/angular';
+  
+  @NgModule({
+  declarations: [
+    HeaderComponent
+  ],
+  exports: [HeaderComponent],
+  imports: [
+    CommonModule,
+    IonicModule
+  ]
+})
+  
+----------------------------------
+Atributo html
+text-capitalize : Pone siempre la primera letra en mayuscula
+Ejemplo:
+<h1 text-capitalize>titulos</h1>
 
 ----------------------------------
 * async

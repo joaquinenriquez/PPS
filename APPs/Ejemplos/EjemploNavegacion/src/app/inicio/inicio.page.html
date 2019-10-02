@@ -1,14 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    
-    <ion-title>Componentes</ion-title>
-
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="Componentes"></app-header>
 
 <ion-content>
 
 <ion-button routerLink="/alert">Alert</ion-button>
 <ion-button routerLink="/action-sheet">Action-Sheet</ion-button>
+
+  <ion-list>
+
+    <ion-item detail *ngFor="let componente of this.componentes"> 
+      <ion-icon slot="start" [name]="componente.icono"></ion-icon>
+      <ion-label [routerLink]="componente.link">{{componente.nombre}}</ion-label>
+    </ion-item>
+
+  </ion-list>
+
 
 </ion-content>

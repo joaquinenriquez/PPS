@@ -1,0 +1,22 @@
+ion-list
+
+Las listas se forman de varias filas de elementos que pueden ser:
+
+* Texto
+* Botones
+* Toggles
+* Imagenes miniaturas (tipo thumbnails)
+* etc
+
+Una ion-list se compone basicamente de tres etiquetas:
+<ion-list>
+	<ion-item>
+		<!-- CONTENIDOS, por ejemplo un label -->
+		<ion-label>Texto</ion-label>
+	</ion-item>
+</ion-list>
+------------------------------------------------------
+
+<ion-item>
+Atributos:
+detail: nos muestra el icono de la flecha (como para marcar que hay mas contenido haciendo clic)
