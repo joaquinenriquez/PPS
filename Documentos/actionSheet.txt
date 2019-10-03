@@ -1,1 +1,46 @@
 Action-Sheet
+Pasos para utilizarlo:
+
+1. Importamos en nuestro componente el ActionSheetController de ionic/angular
+import { ActionSheetController } from '@ionic/angular';
+
+
+2. Lo inyectamos en el constructor una instancia de ActionSheetController
+constructor(private miActionSheet: ActionSheetController) { }
+
+
+
+Atributos:
+
+backdropDismiss:
+Por defecto es true, lo cual nos permite salir del cuadro de dialogo de compartir haciendo clic fuera del mismo. Si lo definimos como false, entonces no nos va a dejar salir 	
+backdropDismiss: false,
+
+cssClass:
+Nos permite especificar una clase css para un elemento determinado del actionSheet, por ejemplo un boton. Para que funcione debemos colocar la clase css en el archivo global de estilos (ya que el actionSheet es un compoente de ionic)
+
+Ejemplo
+    const actionSheet = await this.actionSheetController.create({
+      header: 'Albums',
+      backdropDismiss: false,
+      buttons: [{
+        text: 'Delete',
+        role: 'destructive',
+        icon: 'trash',
+        cssClass: 'rojo',
+        handler: () => {
+          console.log('Delete clicked');
+        }
+      }
+	  
+En global.scss
+
+.rojo span {
+    color: red !important
+}
+
+O para que icono tambien aparezca en rojo agregamos la clase (la encontramos con inspeccionar elemento)
+
+.rojo span, .rojo .sc-ion-action-sheet-md {
+    color: red !important
+}
