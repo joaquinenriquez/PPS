@@ -1,0 +1,10 @@
+Atributos comunes
+
+
+* mode: forzamos para que siempre se visualize como Material Design o Ios. Los valores posibles son: md o ios
+Ejemplo:
+
+* color: define el color. Podemos utilizar los que tenemos en el archivo themes\variables.scss.
+
+* slot: establece la posicion del element. Valores posibles: start | end
+

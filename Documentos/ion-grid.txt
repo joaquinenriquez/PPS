@@ -1,0 +1,13 @@
+<ion-grid>
+ * Funciona practicamente de la misma manera que la grilla de bootstrap
+ * Cada fila tiene 12 posiciones
+
+<ion-grid>
+
+
+<ion-col>
+
+Atributos:
+size: define cuantas posiciones va a ocupar la columna. 
+Si no definimos ningun valor va a tomar el valor predeterminado en funcion de las posiciones que tenga libre.
+Si no entra en el ancho, entonces va a ponerlo en dos renglones distintos (pero sigue siendo la misma fila)

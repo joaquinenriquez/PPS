@@ -1,0 +1,23 @@
+<ion-card>
+La etiqueta <ion-card> sola es un contenedor
+
+
+
+Esta seria la estructra basica:
+
+<ion-card>
+
+	<ion-card-header>
+	
+	<ion-card-title>Titulo</ion-card-tittle>
+	<ion-card-subtitle>SubTitulo</ion-card-subtitle>
+	
+	</ion-card-header>
+	
+	<ion-card-content>
+		Contenidos
+	</ion-card-content>
+	
+</ion-card>
+
+No necesariamente tiene que tener un header (podemos omitirlo o poner otra cosa, por ejemplo un <ion-item>

@@ -23,7 +23,27 @@ export class InicioPage implements OnInit {
       icono: 'appstore',
       nombre: 'Alert',
       link: '/alert'
+    },
+
+    {
+      icono: 'radio-button-on',
+      nombre: 'Botones y Router',
+      link: '/botones'
+    },
+
+    {
+      icono: 'card',
+      nombre: 'Cards',
+      link: '/cards'
+    },
+
+    {
+      icono: 'grid',
+      nombre: 'Grilla - filas',
+      link: '/grid'
     }
+
+
 
   ];
 

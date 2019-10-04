@@ -1,0 +1,4 @@
+<ion-header>
+Atributos:
+no-border: no muestra la linea que divida
+traslucent: hace que se vea semi transparente

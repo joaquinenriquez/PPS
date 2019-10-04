@@ -1,0 +1,31 @@
+
+
+<ion-buttons>
+	* Es un contenedor de botones.
+	* Los botones dentro del toolbar <ion-toolbar> deben estar dentro de un <ion-buttons>
+
+Atributos:
+slot: start/end
+
+
+<ion-button>
+Atributos:
+* expand: full // Lo muestra a todo el ancho
+
+* size: cambia el tamaño en el alto del boton. Ejemplos:
+
+<ion-button size="small">Tamaño chico</ion-button>
+<ion-button size="default">Tamaño por defecto</ion-button>
+<ion-button size="large">Tamaño Grande</ion-button>
+
+
+* color: cambia el color. En en la carpeta theme variables tenemos todos los colores
+color="primary"
+
+* routerLink: nos permite agregar un hipervinculo a otra pages. Ejemplos
+routerLink="/home"
+
+*fill: es el relleno del boton. Ejemplos
+<ion-button class="top-20" fill="clear">Fill Clear</ion-button>
+<ion-button class="top-20" fill="outline">Fill Outline</ion-button>
+<ion-button class="top-20" fill="solid">Fill solid</ion-button>
