@@ -3,11 +3,27 @@
  * Cada fila tiene 12 posiciones
 
 <ion-grid>
-
+Atributos
+fixed: le agrega un margen para que se vea mejorS
 
 <ion-col>
 
 Atributos:
 size: define cuantas posiciones va a ocupar la columna. 
-Si no definimos ningun valor va a tomar el valor predeterminado en funcion de las posiciones que tenga libre.
-Si no entra en el ancho, entonces va a ponerlo en dos renglones distintos (pero sigue siendo la misma fila)
+	*Si no definimos ningun valor va a tomar el valor predeterminado en funcion de las posiciones que tenga libre.
+	* Si no entra en el ancho, entonces va a ponerlo en dos renglones distintos (pero sigue siendo la misma fila)
+	
+Responsive:
+Podemos definir distintos size en funcion de los tamños de pantallas
+
+size-lg: es el tamaño que va adoptar en dispositivos grandes
+size-md: es el tamaño que va adoptar en dispositivos medianos
+size-sm: es el tamaño que va adoptar en dospositivos chicos
+size-xs: es el tamaño que va adoptar en dispositivos muy chicos
+
+Ejemplo:
+
+                size-lg="3"
+                size-md="4"
+                size-sm="6"
+                size-xs="12"
