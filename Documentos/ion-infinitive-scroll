@@ -1,0 +1,15 @@
+Scroll infinito
+
+* Lo ubicamos al final de nuestro content
+
+Atributos:
+
+* threshold: le indicamos a ionic que tan cerca del final tenemos que empezar a cargar. Por ejemplo:
+
+threshold="100px"
+
+Va a empezar a cargar 100px antes del final
+
+(ionInfinite): es el evento que se va a disparar cuando este llegando al final.
+
+(ionInfitive)="cargarDatos($event)"
