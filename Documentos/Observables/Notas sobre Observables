@@ -1,0 +1,7 @@
+Observables:
+
+Subject: es el objeto que utilizaremos para emitir nuevos valores o cambios a los subscriptores
+
+Observable: es el objeto que gestiona la lista de suscriptores y que notifica a estos los cambios
+
+Susbscripciones: representan a los observadores que estan a la escucha de cambios en el subject 

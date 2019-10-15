@@ -2,6 +2,16 @@ Crear un proyecto nuevo
 ionic start nombreProyecto blank --type=angular
 ionic start nombreProyecto blank --type=angular --skipTests
 
+ionic start --list
+Nos va a mostar un listado de todas las template disponibles
+
+ionic start 
+Si ponemos solo nos va abrir un asistente donde podemos ingresar el nombre del proyecto y la template
+
+
+
+
+
 Omitir crear archivos .spec
 --spec=false
 

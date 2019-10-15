@@ -5,7 +5,7 @@
 	* Los botones dentro del toolbar <ion-toolbar> deben estar dentro de un <ion-buttons>
 
 Atributos:
-slot: start/end
+slot: start/end/icon-only
 
 
 <ion-button>
@@ -29,3 +29,6 @@ routerLink="/home"
 <ion-button class="top-20" fill="clear">Fill Clear</ion-button>
 <ion-button class="top-20" fill="outline">Fill Outline</ion-button>
 <ion-button class="top-20" fill="solid">Fill solid</ion-button>
+
+*shape = cambia los bordes a redondeados
+shape="round"

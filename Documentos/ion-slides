@@ -1,0 +1,7 @@
+ion-slides
+
+
+swiperOpts = {
+	allowSlidePrev: false,
+	allowSlideNext: false
+}

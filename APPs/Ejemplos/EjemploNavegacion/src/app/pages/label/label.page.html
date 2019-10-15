@@ -1,0 +1,65 @@
+<app-header titulo= "Label"></app-header>
+
+<ion-content>
+
+<!-- Default Label -->
+<ion-label>Label por default</ion-label>
+
+<!-- Label Colors -->
+<ion-label color="primary">Label color primary</ion-label>
+<ion-label color="secondary">Label color secondary</ion-label>
+<ion-label color="danger">Label color danger</ion-label>
+<ion-label color="light">Label color light</ion-label>
+<ion-label color="dark">Label color dark</ion-label>
+
+<!-- Item Labels -->
+<ion-item>
+  <ion-label>Label dentro de un item</ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label class="ion-text-wrap">
+    Label con mucho texto con clase "ion-text-wrap". Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi labore a maiores rerum iste illum saepe dolore aliquid quae minima, aperiam, quasi facilis doloribus impedit nihil mollitia porro provident.
+  </ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label>
+    Label con mucho texto sin la clase "ion-text-wrap". Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aspernatur blanditiis doloremque atque est quasi aliquid tempore, veniam earum odio totam illum necessitatibus cumque beatae qui praesentium, a, ducimus aperiam.
+  </ion-label>
+</ion-item>
+
+<!-- Input Labels -->
+<ion-item>
+  <ion-label>Label con inputs por default</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-label>Labels con input con distintos valores del atributo position</ion-label>
+
+<ion-item>
+  <ion-label position="fixed">Fixed</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Floating</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Stacked</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Toggle</ion-label>
+  <ion-toggle slot="end" checked></ion-toggle>
+</ion-item>
+
+<ion-item>
+  <ion-checkbox slot="start" checked></ion-checkbox>
+  <ion-label>Checkbox</ion-label>
+</ion-item>
+
+</ion-content>

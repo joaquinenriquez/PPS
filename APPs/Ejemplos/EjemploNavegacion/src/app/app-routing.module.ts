@@ -8,6 +8,8 @@ const routes: Routes = [
   { path: 'inicio', loadChildren: './inicio/inicio.module#InicioPageModule' },
   { path: 'botones', loadChildren: './pages/botones/botones.module#BotonesPageModule' },  { path: 'cards', loadChildren: './pages/cards/cards.module#CardsPageModule' },
   { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
+  { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
+  { path: 'label', loadChildren: './pages/label/label.module#LabelPageModule' },
 
 
   // { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},

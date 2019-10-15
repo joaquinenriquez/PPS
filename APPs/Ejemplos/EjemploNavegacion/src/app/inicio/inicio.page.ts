@@ -41,6 +41,18 @@ export class InicioPage implements OnInit {
       icono: 'grid',
       nombre: 'Grilla - filas',
       link: '/grid'
+    },
+
+    {
+      icono: 'hammer',
+      nombre: 'Input - Forms',
+      link: '/input'
+    },
+
+    {
+      icono: 'label',
+      nombre: 'label',
+      link: '/label'
     }
 
 
