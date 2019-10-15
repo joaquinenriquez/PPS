@@ -1,0 +1,5 @@
+1. Lo inyectamos en el constructor
+
+2. Utilizamos el metodo navigateForward(path) para movernos a otra pagina. Por ejemplo:
+
+     this.navCtrl.navigateForward('/tabs/tab2');

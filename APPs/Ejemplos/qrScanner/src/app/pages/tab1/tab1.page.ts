@@ -15,23 +15,21 @@ export class Tab1Page {
   };
 
   constructor(private barcodeScanner: BarcodeScanner,
-              private dataLocalService: DataLocalService) {}
-  
-              ionViewDidEnter() {
-    console.log('viewDidEnter');
+              private dataLocalService: DataLocalService) { }
+
+  ionViewDidEnter() {
+
   }
 
   ionViewDidLeave() {
-    console.log('viewDidLeave');
+
   }
 
   ionViewWillEnter() {
-    console.log('viewWillEnter');
     this.escanear();
   }
 
   ionViewWillLeave() {
-    console.log('viewWillLeave');
   }
 
 
@@ -43,11 +41,11 @@ export class Tab1Page {
         this.dataLocalService.guardarRegistro(barcodeData.format, barcodeData.text);
       }
 
-     }).catch(err => {
-         console.log('Error', err);
-         // Para probar en el navegdador
-         this.dataLocalService.guardarRegistro('QR', 'http://www.google.com');
-     });
+    }).catch(err => {
+      console.log('Error', err);
+      // Para probar en el navegdador
+      this.dataLocalService.guardarRegistro('QR', 'http://www.google.com');
+    });
   }
 
 }
